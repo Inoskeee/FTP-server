@@ -5910,11 +5910,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Nikita\\Work\\FTPServer\\FTPServer\\FTPServer.csproj",
+      "projectUniqueName": "C:\\Users\\Nikita\\Documents\\GitHub\\FTPServer\\FTPServer\\FTPServer\\FTPServer.csproj",
       "projectName": "FTPServer",
-      "projectPath": "C:\\Nikita\\Work\\FTPServer\\FTPServer\\FTPServer.csproj",
+      "projectPath": "C:\\Users\\Nikita\\Documents\\GitHub\\FTPServer\\FTPServer\\FTPServer\\FTPServer.csproj",
       "packagesPath": "C:\\Users\\Nikita\\.nuget\\packages\\",
-      "outputPath": "C:\\Nikita\\Work\\FTPServer\\FTPServer\\obj\\",
+      "outputPath": "C:\\Users\\Nikita\\Documents\\GitHub\\FTPServer\\FTPServer\\FTPServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

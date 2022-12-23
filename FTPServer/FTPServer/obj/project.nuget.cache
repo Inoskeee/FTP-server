@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BTDstAgJQbseDgJbiIim0aKkj1R2qY+OCdcdC7J2epahQDgrK+r9sxqYapFDMPvv8wVPktUb8j7Bs0GAKW151w==",
+  "dgSpecHash": "H0UnJS6mfSaUZAQG4DGvX7FRxHZ12YKLU3Yz9CEGVKWmFYWcdtRkRiEQREADS3SoOCfREdmxFzDaqgoFM4RrRQ==",
   "success": true,
-  "projectFilePath": "C:\\Nikita\\Work\\FTPServer\\FTPServer\\FTPServer.csproj",
+  "projectFilePath": "C:\\Users\\Nikita\\Documents\\GitHub\\FTPServer\\FTPServer\\FTPServer\\FTPServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nikita\\.nuget\\packages\\fubardev.ftpserver\\3.1.2\\fubardev.ftpserver.3.1.2.nupkg.sha512",
     "C:\\Users\\Nikita\\.nuget\\packages\\fubardev.ftpserver.abstractions\\3.1.2\\fubardev.ftpserver.abstractions.3.1.2.nupkg.sha512",

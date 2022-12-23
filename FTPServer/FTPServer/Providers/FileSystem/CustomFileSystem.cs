@@ -84,19 +84,9 @@ namespace FTPServer.Providers.FileSystem
             var targetEntry = (DotNetDirectoryEntry)targetDirectory;
             var fileInfo = new FileInfo(Path.Combine(targetEntry.Info.FullName, fileName));
 
-            string fileData = string.Empty;
+            //byteFile хранит в себе набор байтов, считанный из файла
+            byte[] byteFile = null;
 
-            //using (StreamReader reader = new StreamReader(data, Encoding.UTF8))
-            //{
-            //    //fileData содержит контент, считанный из файла
-            //    fileData = await reader.ReadToEndAsync();
-            //    _logger.LogInformation(fileData);
-            //    ///<summary>
-            //    ///Тут код для передачи данных в RabbitMQ
-            //    /// </summary>
-
-            //}
-            byte[] b = null;
             using (Stream stream = data)
             using (MemoryStream ms = new MemoryStream())
             {
@@ -107,16 +97,19 @@ namespace FTPServer.Providers.FileSystem
                     count = stream.Read(buf, 0, 1024);
                     ms.Write(buf, 0, count);
                 } while (stream.CanRead && count > 0);
-                b = ms.ToArray();
+                byteFile = ms.ToArray();
             }
-            string path = $"{Path.Combine(Path.GetTempPath(), "CustomFtpServer")}\\{fileInfo.Name}";
 
+            ///<summary>
+            ///Тут код для передачи данных в RabbitMQ
+            /// </summary>
+
+
+            string path = $"{Path.Combine(Path.GetTempPath(), "CustomFtpServer")}\\{fileInfo.Name}";
             _logger.LogInformation(path);
-            //using (StreamWriter writetext = new StreamWriter(path))
-            //{
-            //    await writetext.WriteAsync(fileData);
-            //}
-            File.WriteAllBytes(path, b);
+
+            File.WriteAllBytes(path, byteFile);
+
             _logger.LogInformation($"New file named {fileInfo.Name} was created!");
             return null;
         }
