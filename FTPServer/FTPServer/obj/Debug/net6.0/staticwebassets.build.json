@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Bs7WBVuIS+i7qGRKpPOQkbtqCom+4VI5m/1NoqQuXjM=",
+  "Source": "FTPServer",
+  "BasePath": "_content/FTPServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
